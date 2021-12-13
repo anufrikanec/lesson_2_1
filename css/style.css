@@ -57,3 +57,42 @@ body {
 .header__menu {
     display: none;
 }
+
+.brand {
+    display: flex;
+    margin: 0 0 63px;
+    background-color: var(--pink-bkg);
+}
+
+.brand__wrp {
+    display: flex;
+    justify-content: flex-start;
+    width: 1540px;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.brand__title-wrp {
+    display: flex;
+    align-items: center;
+    padding: 0 0 0 92px;
+    flex-grow: 1;
+}
+
+.brand__title {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 58px;
+    color: var(--black);
+    text-transform: uppercase;
+}
+
+.brand__sub-title {
+    display: block;
+    font-size: 32px;
+    line-height: 38px;
+}
+
+.brand__sub-title-pink {
+    color: var(--pink-text)
+}

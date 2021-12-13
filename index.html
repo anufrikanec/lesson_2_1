@@ -68,9 +68,17 @@
         </div>
     </header>
     <main>
-        <section>
-            <img src="./img/man.jpg" alt="man">
-            <h1>the brand of luxerious fashion</h1>
+        <section class="brand">
+            <div class="brand__wrp">
+<!--            добавил контейнер (brand__wrp) из за того что мужик на макете должен быть все же под логотипом, заменил на пнг-->
+<!--            из за фона и позиционирования мужика, по этой же причине перенес цвет фона в тег бренд, ширину подгонял в ручную-->
+<!--                вероятно есть способ лучше - не придумал-->
+                <img class="brand__img" src="./img/man.png" alt="man">
+                <div class="brand__title-wrp">
+                    <h1 class="brand__title">the brand<span class="brand__sub-title">of luxerious <span
+                            class="brand__sub-title-pink">fashion</span></span></h1>
+                </div>
+            </div>
         </section>
         <section>
             <h2>sales</h2>
