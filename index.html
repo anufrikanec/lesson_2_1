@@ -72,7 +72,7 @@
             <div class="brand__wrp">
 <!--            добавил контейнер (brand__wrp) из за того что мужик на макете должен быть все же под логотипом, заменил на пнг-->
 <!--            из за фона и позиционирования мужика, по этой же причине перенес цвет фона в тег бренд, ширину подгонял в ручную-->
-<!--                вероятно есть способ лучше - не придумал-->
+<!--            вероятно есть способ лучше - не придумал-->
                 <img class="brand__img" src="./img/man.png" alt="man">
                 <div class="brand__title-wrp">
                     <h1 class="brand__title">the brand<span class="brand__sub-title">of luxerious <span
@@ -80,82 +80,75 @@
                 </div>
             </div>
         </section>
-        <section>
-            <h2>sales</h2>
-            <ul>
-                <li>
-                    <p>30% off</p>
-                    <h3>for women</h3>
-                    <img src="./img/for_woman.jpg" alt="for_woman">
+        <section class="sales container">
+            <h2 class="visually-hidden">sales</h2>
+            <ul class="sales__list">
+                <li class="sales__item sales__item--woman">
+                    <p class="sales__item-text">30% off</p>
+                    <h3 class="sales__item-title">for women</h3>
                 </li>
-                <li>
-                    <p>hot deal</p>
-                    <h3>for men</h3>
-                    <img src="./img/for_man.jpg" alt="for_man">
+                <li class="sales__item sales__item--man">
+                    <p class="sales__item-text">hot deal</p>
+                    <h3 class="sales__item-title">for men</h3>
                 </li>
-                <li>
-                    <p>new arrivals</p>
-                    <h3>for kids</h3>
-                    <img src="./img/for_kids.jpg" alt="for_kids">
+                <li class="sales__item sales__item--kids">
+                    <p class="sales__item-text">new arrivals</p>
+                    <h3 class="sales__item-title">for kids</h3>
                 </li>
-                <li>
-                    <p>luxirous & trendy</p>
-                    <h3>accesories</h3>
-                    <img src="./img/accesories.jpg" alt="accesories">
+                <li class="sales__item sales__item--accesories">
+                    <p class="sales__item-text">luxirous & trendy</p>
+                    <h3 class="sales__item-title">accesories</h3>
                 </li>
             </ul>
         </section>
-        <section>
-            <h2>Fetured Items</h2>
-            <p>Shop for items based on what we featured in this week</p>
-            <ul>
-                <li>
-                    <img src="./img/product-1.jpg" alt="product-1">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+        <section class="products container">
+            <h2 class="products__title">Fetured Items</h2>
+            <p class="products__text">Shop for items based on what we featured in this week</p>
+            <ul class="products__list">
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-1.jpg" alt="product-1">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
-                <li>
-                    <img src="./img/product-2.jpg" alt="product-2">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-2.jpg" alt="product-2">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
-                <li>
-                    <img src="./img/product-3.jpg" alt="product-3">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-3.jpg" alt="product-3">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
-                </li>
-                <li>
-                    <img src="./img/product-4.jpg" alt="product-4">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-4.jpg" alt="product-4">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
-                </li>
-                <li>
-                    <img src="./img/product-5.jpg" alt="product-5">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-5.jpg" alt="product-5">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
-                </li>
-                <li>
-                    <img src="./img/product-6.jpg" alt="product-6">
-                    <h3>ellery x m'o capsule</h3>
-                    <p>Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
+                <li class="products__item">
+                    <img class="products__item-img" src="./img/product-6.jpg" alt="product-6">
+                    <h3 class="products__item-title">ellery x m'o capsule</h3>
+                    <p class="products__item-desc">Known for her sculptural takes on traditional tailoring, Australian arbiter of cool Kym Ellery
                         teams up with Moda Operandi.</p>
-                    <p>$52.00</p>
+                    <p class="products__item-price">$52.00</p>
                 </li>
             </ul>
-            <button>Browse All Product</button>
+            <button class="products__button">Browse All Product</button>
         </section>
     </main>
     <section>
