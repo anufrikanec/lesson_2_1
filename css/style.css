@@ -67,6 +67,11 @@ body {
     display: none;
 }
 
+/*не понимаю почему не работает*/
+.header__search-input {
+    background-color: red;
+}
+
 .header__search:hover .header__search-form,
 .header__search:focus .header__search-form,
 .header__search:active .header__search-form {
@@ -326,8 +331,6 @@ body {
     margin-top: 30px;
     background-color: var(--milk-background);
 }
-.products__item-img {
-}
 
 .products__item-title {
     margin-top: 23px;
@@ -402,6 +405,8 @@ body {
 .products__item-button,
 .products__item-overlay {
     display: none;
+    cursor: pointer;
+    outline: none;
 }
 
 .products__item:hover .products__item-overlay,
@@ -427,6 +432,8 @@ body {
 .products__button:hover,
 .products__button:active,
 .products__button:focus {
+    cursor: pointer;
+    outline: none;
     background: var(--pink-text);
     border: 1px solid var(--pink-text);
     color: var(--white-text);
@@ -456,9 +463,9 @@ body {
 .benefits__item-img {
     margin-top: 103px;
     margin-bottom: 19px;
-    display: block;
     margin-left: auto;
-    margin-right: auto
+    margin-right: auto;
+    fill: #F16D7F
 }
 
 .benefits__item-title {
@@ -586,11 +593,30 @@ body {
 }
 
 .footer_copyright-item {
-    background-color: #FFFFFF;
-    width: 32px;
-    height: 32px;
-    margin: 4px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    width: 32px;
+    height: 32px;
+    background-color: #FFFFFF;
+    display: flex;
+    margin: 2px;
+}
+
+.footer_copyright-social_icon {
+    fill: black;
+}
+
+.footer_copyright-item:hover,
+.footer_copyright-item:active,
+.footer_copyright-item:focus {
+    cursor: pointer;
+    outline: none;
+    background: var(--pink-text);
+    border: 1px solid var(--pink-text);
+}
+
+.footer_copyright-item:hover .footer_copyright-social_icon,
+.footer_copyright-item:active .footer_copyright-social_icon,
+.footer_copyright-item:focus .footer_copyright-social_icon {
+    fill: var(--white-text);
 }
