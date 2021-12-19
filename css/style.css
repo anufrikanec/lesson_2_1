@@ -720,6 +720,13 @@ body {
     margin-bottom: 96px;
 }
 
+.registration__submit:hover,
+.registration__submit:focus,
+.registration__submit:active {
+    cursor: pointer;
+    outline: none;
+}
+
 .registration__submit-text {
     color: var(--white-text);
     text-transform: uppercase;
