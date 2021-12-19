@@ -253,6 +253,14 @@ body {
     flex-grow: 1;
 }
 
+.sales__item:hover,
+.sales__item:active,
+.sales__item:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+}
+
 .sales__list {
     display: flex;
     flex-wrap: wrap;
@@ -567,6 +575,14 @@ body {
     border: 0;
     color: #FFFFFF;
     width: 100px;
+}
+
+.footer__info-button:hover,
+.footer__info-button:active,
+.footer__info-button:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
 }
 
 .footer_copyright {
