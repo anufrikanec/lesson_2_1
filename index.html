@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fashion shop</title>
-    <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +25,7 @@
                         <img class="header__search-img" src="./img/loupe.svg" alt="loupe">
                         <form class="header__search-form" action="">
                             <label class="header__search-label visually-hidden" for="search">поиск</label>
-                            <input type="header__search-input" placeholder="Поиск" id="search">
+                            <input class="header__search-input" placeholder="Поиск" id="search">
                         </form>
                     </div>
                 </div>
@@ -88,7 +87,7 @@
     </header>
     <main>
         <section class="brand">
-            <div class="brand__wrp">
+            <div class="brand__wrp container">
 <!--            добавил контейнер (brand__wrp) из за того что мужик на макете должен быть все же под логотипом, заменил на пнг-->
 <!--            из за фона и позиционирования мужика, по этой же причине перенес цвет фона в тег бренд, ширину подгонял в ручную-->
 <!--            вероятно есть способ лучше - не придумал-->
@@ -250,7 +249,7 @@
         </ul>
     </section>
     <footer class="footer">
-        <div class="footer_wrp">
+        <div class="footer__wrp">
                 <ul class="footer__info container">
                 <li class="footer__info-item">
                     <img class="footer__info-img" src="img/footer_face.png" alt="footer_face">
