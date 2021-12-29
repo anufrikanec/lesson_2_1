@@ -31,6 +31,17 @@
     line-height: 58px;
     color: $black;
     text-transform: uppercase;
+    position: relative;
+}
+
+.brand__title:before {
+    content: '';
+    width: 15px;
+    height: 100%;
+    background: $pink-text;
+    position: absolute;
+    top: 5px;
+    left: -35px;
 }
 
 .brand__sub-title {
@@ -41,4 +52,58 @@
 
 .brand__sub-title-pink {
     color: $pink-text;
+}
+
+@media (max-width: $tablet-width) {
+    .brand{
+        margin: 0 0 20px;
+    }
+
+    .brand__img {
+        width: 50%;
+        object-fit: cover;
+        position: relative;
+        left: -50px;
+    }
+
+    .brand__wrp {
+        height: auto;
+    }
+
+    .brand__title-wrp {
+        width: 50%;
+        padding: 0;
+    }
+
+    .brand__title {
+        @include font(44px, 53px, 900);
+    }
+
+    .brand__sub-title {
+        @include font(24px, 29px, 700);
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .brand{
+        margin: 0 0 64px;
+    }
+
+    .brand__img {
+        display: none;
+    }
+
+    .brand__title-wrp {
+        justify-content: center;
+        min-height: 350px;
+
+    }
+
+    .brand__title {
+        @include font(38px, 46px);
+    }
+
+    .brand__sub-title {
+        @include font(20px, 24px);
+    }
 }
