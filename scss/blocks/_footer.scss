@@ -142,3 +142,23 @@
     fill: $white-text;
   }
 }
+
+@media (max-width: $tablet-width) {
+  .footer {
+    &__info {
+      flex-direction: column;
+    }
+
+    &__info-img {
+      padding-top: 53px;
+    }
+
+    &__info-subscribetitle {
+      padding-top: 48px;
+    }
+
+    &__info-form {
+      margin-bottom: 140px;
+    }
+  }
+}

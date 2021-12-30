@@ -2,9 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fashion shop</title>
+    <title>Cart</title>
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -84,59 +82,54 @@
     </div>
 </header>
 <main>
-    <section class="registration">
-        <div class="registration__title-wrap">
-            <h2 class="registration__title container">registration</h2>
+    <section class="cart">
+        <div class="cart__title-wrap">
+            <h2 class="cart__title container">shopping cart</h2>
         </div>
-        <div class="registration__wrap container">
-            <form class="registration__form" action="" method="POST">
-                <fieldset class="registration__form-fieldset">
-                    <legend class="registration__form-legend">Your Name</legend>
-                    <label class="visually-hidden" for="name">Name</label>
-                    <input class="registration__input" type="text" id="name" placeholder="First Name" required>
-                    <label class="visually-hidden" for="surname">surname</label>
-                    <input class="registration__input" type="text" id="surname" placeholder="Last Name" required>
-                    <div class="registration__radio">
-                        <input class="registration__radio-input" type="radio" id="sex1"
-                               name="sex" value="Male">
-                        <label class="registration__radio-label" for="sex1">Male</label>
-                        <input class="registration__radio-input" type="radio" id="sex2"
-                               name="sex" value="Female">
-                        <label class="registration__radio-label" for="sex2">Female</label>
+        <div class="cart__wrap container">
+            <div class="cart__products">
+                <div class="cart__products_item">
+                    <img src="./img/cart_prod1.jpg" alt="Cart product img" class="cart__products_item_img">
+                    <div class="cart__products_item_info">
+                        <h2 class="cart__products_item_info_title">mango  people  t-shirt</h2>
+                        <p class="cart__products_item_info_price">Price: $300</p>
+                        <p class="cart__products_item_info_color">Color: Red</p>
+                        <p class="cart__products_item_info_size">Size: Xl</p>
+                        <p class="cart__products_item_info_quantity">Quantity:	2</p>
                     </div>
-                </fieldset>
-                <fieldset class="registration__form-fieldset">
-                    <legend class="registration__form-legend">Login details</legend>
-                    <label class="visually-hidden" for="login">Login</label>
-                    <input class="registration__input" type="email" id="login" placeholder="Email" required>
-                    <label class="visually-hidden" for="password">Password</label>
-                    <input class="registration__input" type="password" id="password" placeholder="Password" required>
-                    <p class="registration__input-text">
-                        Please use 8 or more characters, with at least 1 number and a mixture of uppercase and lowercase letters
-                    </p>
-                </fieldset>
-                <button type="submit" class="registration__submit">
-                    <p class="registration__submit-text">join now</p>
-                    <svg class="registration__submit-icon" width="17" height="10" viewBox="0 0 17 10" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M11.54 0.208095C11.6058 0.142131 11.684 0.0897967 11.77 0.0540883C11.8561 0.01838 11.9483 0 12.0415 0C12.1347 0 12.2269 0.01838 12.313 0.0540883C12.399 0.0897967 12.4772 0.142131 12.543 0.208095L16.7929 4.458C16.8589 4.5238 16.9112 4.60196 16.9469 4.68802C16.9826 4.77407 17.001 4.86632 17.001 4.95949C17.001 5.05266 16.9826 5.14491 16.9469 5.23097C16.9112 5.31702 16.8589 5.39518 16.7929 5.46098L12.543 9.71089C12.41 9.84389 12.2296 9.91861 12.0415 9.91861C11.8534 9.91861 11.673 9.84389 11.54 9.71089C11.407 9.57788 11.3323 9.39749 11.3323 9.2094C11.3323 9.0213 11.407 8.84091 11.54 8.70791L15.2898 4.95949L11.54 1.21107C11.474 1.14528 11.4217 1.06711 11.386 0.981059C11.3503 0.895005 11.3319 0.802752 11.3319 0.709584C11.3319 0.616415 11.3503 0.524162 11.386 0.438109C11.4217 0.352055 11.474 0.273891 11.54 0.208095Z"/>
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M0 4.95948C0 4.77162 0.0746263 4.59146 0.207462 4.45862C0.340297 4.32579 0.52046 4.25116 0.708318 4.25116H15.583C15.7708 4.25116 15.951 4.32579 16.0838 4.45862C16.2167 4.59146 16.2913 4.77162 16.2913 4.95948C16.2913 5.14734 16.2167 5.3275 16.0838 5.46033C15.951 5.59317 15.7708 5.6678 15.583 5.6678H0.708318C0.52046 5.6678 0.340297 5.59317 0.207462 5.46033C0.0746263 5.3275 0 5.14734 0 4.95948Z"/>
-                    </svg>
-                </button>
-            </form>
-            <div class="registration__pluses">
-                <h3 class="registration__pluses-title">
-                    loyalty has its perks
-                </h3>
-                <p class="registration__pluses-text">
-                    Get in on the loyalty program where you can earn points and unlock serious perks. Starting with these as soon as you join:
-                </p>
-                <ul class="registration__pluses-list">
-                    <li class="registration__pluses-item">15% off welcome offer</li>
-                    <li class="registration__pluses-item">Free shipping, returns and exchanges on all orders</li>
-                    <li class="registration__pluses-item">$10 off a purchase on your birthday</li>
-                    <li class="registration__pluses-item">Early access to products</li>
-                    <li class="registration__pluses-item">Exclusive offers & rewards</li>
-                </ul>
+                </div>
+                <div class="cart__products_item">
+                    <img src="./img/cart_prod2.jpg" alt="Cart product img" class="cart__products_item_img">
+                    <div class="cart__products_item_info">
+                        <h2 class="cart__products_item_info_title">mango  people  t-shirt</h2>
+                        <p class="cart__products_item_info_price">Price: $300</p>
+                        <p class="cart__products_item_info_color">Color: Red</p>
+                        <p class="cart__products_item_info_size">Size: Xl</p>
+                        <p class="cart__products_item_info_quantity">Quantity:	2</p>
+                    </div>
+                </div>
+                <div class="cart__products_buttons">
+                    <button class="cart__products_buttons_clear">clear shopping cart</button>
+                    <button class="cart__products_buttons_continue">continue shopping</button>
+                </div>
+            </div>
+            <div class="cart__adress">
+                <form action="#" class="cart__adress_form">
+                    <fieldset class="cart__form-fieldset">
+                        <legend class="cart__form-legend">shipping adress</legend>
+                        <label class="visually-hidden" for="Country">Country</label>
+                        <input class="cart_input" type="text" id="Country" placeholder="Country" required>
+                        <label class="visually-hidden" for="State">State</label>
+                        <input class="cart__input" type="text" id="State" placeholder="State">
+                        <label class="visually-hidden" for="Postcode">Postcode</label>
+                        <input class="cart__input" type="text" id="Postcode" placeholder="Postcode / Zip">
+                    </fieldset>
+                </form>
+                <div class="cart__adress_total">
+                    <p class="cart__adress_total_subtotal">SUB TOTAL         $900</p>
+                    <p class="cart__adress_total_grandtotal">GRAND TOTAL      $900</p>
+                    <button class="cart__adress_total-button">proceed to checkout</button>
+                </div>
             </div>
         </div>
     </section>

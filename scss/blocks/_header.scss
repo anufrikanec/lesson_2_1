@@ -1,99 +1,99 @@
 .header {
     background-color: $black;
-
-    .header__logo {
+    
+    &__logo {
         margin: 0 41px 0 0;
     }
 
-    .header__logo:hover,
-    .header__logo:focus {
+    &__logo:hover,
+    &__logo:focus {
         opacity: 0.5;
         cursor: pointer;
         outline: none;
     }
 
-    .header__logo:active {
+    &__logo:active {
         opacity: 0.7;
     }
 
-    .header__search{
+    &__search{
         display: flex;
         align-items: center;
     }
 
-    .header__search-group{
+    &__search-group{
         display: flex;
     }
 
-    .header__search-form {
+    &__search-form {
         display: none;
     }
 
-    .header__search-input {
+    &__search-input {
         height: 32px;
         width: 200px;
         border-radius: 10px;
     }
 
-    .header__search:hover .header__search-form,
-    .header__search:focus .header__search-form,
-    .header__search:active .header__search-form {
+    &__search:hover &__search-form,
+    &__search:focus &__search-form,
+    &__search:active &__search-form {
         display: block;
     }
 
-    .header__search:hover .header__search-img,
-    .header__search:focus .header__search-img,
-    .header__search:active .header__search-img {
+    &__search:hover &__search-img,
+    &__search:focus &__search-img,
+    &__search:active &__search-img {
         display: none;
     }
 
-    .header__button {
+    &__button {
         background-color: transparent;
         border: 0;
     }
 
-    .icon{
+    &__icon{
         fill: #E8E8E8;
     }
 
-    .header__button:hover,
-    .header__button:active,
-    .header__button:focus {
+    &__button:hover,
+    &__button:active,
+    &__button:focus {
         cursor: pointer;
         outline: none;
     }
 
-    .header__button:hover .icon,
-    .header__button:active .icon,
-    .header__button:focus .icon {
+    &__button:hover &__icon,
+    &__button:active &__icon,
+    &__button:focus &__icon {
         fill:  $pink-text;
     }
 
-    .header__link {
+    &__link {
         margin: 0 0 0 33px;
     }
 
-    .header__link:hover,
-    .header__link:active,
-    .header__link:focus {
+    &__link:hover,
+    &__link:active,
+    &__link:focus {
         cursor: pointer;
         outline: none;
     }
 
-    .header__link:hover .icon,
-    .header__link:active .icon,
-    .header__link:focus .icon {
+    &__link:hover &__icon,
+    &__link:active &__icon,
+    &__link:focus &__icon {
         fill: $pink-text;
     }
 
-    .header__wrp {
+    &__wrp {
         display: flex;
         justify-content: space-between;
         min-height: 75px;
         align-items: center;
     }
 
-    .header__menu {
+    &__menu {
         display: none;
         position: absolute;
         width: 232px;
@@ -107,21 +107,29 @@
         box-shadow: -13px 13px 11px -7px rgba(34, 60, 80, 0.38);
     }
 
-    .header__button:hover +.header__menu,
-    .header__button:active +.header__menu,
-    .header__button:focus +.header__menu {
+    &__button:hover +&__menu,
+    &__button:active +&__menu,
+    &__button:focus +&__menu {
         display: block;
     }
 
-    .header-menu:hover {
+    &-menu:hover {
         display: block;
     }
 
-    .header__menu-title {
+    &__menu-title {
         font-weight: 700;
         font-size: 14px;
         line-height: 17px;
         text-transform: uppercase;
         padding-top: 37px;
+    }
+}
+
+@media (max-width: $mobile-width) {
+    .header{
+        &__link {
+            display: none;
+        }
     }
 }
