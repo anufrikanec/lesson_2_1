@@ -3,7 +3,6 @@
     height: 148px;
     background: #F8F3F4;
     display: flex;
-    margin-bottom: 64px;
   }
 
   &__title {
@@ -24,6 +23,7 @@
     flex-direction: column;
     width: 50%;
     margin-top: 96px;
+    flex-grow: 1;
   }
 
   &__products_item {
@@ -88,6 +88,7 @@
     border: 1px solid #A4A4A4;
     @include font(14px, 17px, 300);
     color: #000000;
+    text-transform: uppercase;
   }
 
   &__products_button:hover,
@@ -98,5 +99,100 @@
     opacity: 0.5;
     background: $pink-text;
     color: $white-text;
+  }
+
+  &__adress {
+    padding-left: 128px;
+    padding-top: 113px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  &__form-fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  &__form-legend {
+    @include font(16px, 19px, 300);
+    color: #222222;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+  &__input {
+    width: 100%;
+    margin: 10px 0;
+    height: 44px;
+    border: 1px solid #A4A4A4;
+    padding-left: 16px;
+  }
+
+  &__adress_button {
+    background: #FFFFFF;
+    padding: 17px 40px;
+    border: 1px solid #A4A4A4;
+    @include font(14px, 17px, 300);
+    color: #000000;
+    text-transform: uppercase;
+    margin-top: 14px;
+    margin-bottom: 57px;
+  }
+
+  &__adress_button:hover,
+  &__adress_button:active,
+  &__adress_button:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
+    background: $pink-text;
+    color: $white-text;
+  }
+
+  &__adress_total {
+    background: #F5F3F3;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  &__adress_total_subtotal {
+    text-align: right;
+    font-size: 11px;
+    line-height: 13px;
+    color: #4A4A4A;
+    margin-bottom: 12px;
+  }
+
+  &__adress_total_grandtotal {
+    text-align: right;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 19px;
+    color: #222222;
+    margin-bottom: 21px;
+  }
+
+  &__adress_total_grandtotal-rate {
+    color: $pink-text
+  }
+
+  &__adress_total-button {
+    background-color: $pink-text;
+    color: $white-text;
+    border: 0;
+    padding: 15px 41px;
+    text-transform: uppercase;
+  }
+
+  &__adress_total-button:hover,
+  &__adress_total-button:active,
+  &__adress_total-button:focus {
+    cursor: pointer;
+    outline: none;
+    opacity: 0.5;
   }
 }
