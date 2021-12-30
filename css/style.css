@@ -938,4 +938,97 @@ body {
   color: #222222;
 }
 
+.cart__title-wrap {
+  height: 148px;
+  background: #F8F3F4;
+  display: flex;
+  margin-bottom: 64px;
+}
+.cart__title {
+  align-self: center;
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  color: #F1808F;
+  font-weight: 400;
+}
+.cart__wrap {
+  display: flex;
+}
+.cart__products {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  margin-top: 96px;
+}
+.cart__products_item {
+  display: flex;
+  margin-bottom: 40px;
+  -webkit-box-shadow: 10px 10px 20px 0px rgba(34, 60, 80, 0.2);
+  -moz-box-shadow: 10px 10px 20px 0px rgba(34, 60, 80, 0.2);
+  box-shadow: 10px 10px 20px 0px rgba(34, 60, 80, 0.2);
+}
+.cart__products_item:hover, .cart__products_item:active, .cart__products_item:focus {
+  cursor: pointer;
+  outline: none;
+  opacity: 0.5;
+}
+.cart__products_item_img {
+  width: 40%;
+}
+.cart__products_item_info {
+  padding-left: 31px;
+  padding-top: 22px;
+}
+.cart__products_item_info_title {
+  text-transform: uppercase;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  padding-right: 100px;
+  padding-bottom: 28px;
+}
+.cart__products_item_info_color, .cart__products_item_info_size, .cart__products_item_info_price {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  color: #575757;
+}
+.cart__products_item_info_quantity {
+  font-size: 22px;
+  line-height: 26px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 62px;
+  color: #575757;
+}
+.cart__products_item_info_price-rate {
+  color: #F1808F;
+}
+.cart__products_buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 128px;
+}
+.cart__products_button {
+  background: #FFFFFF;
+  padding: 17px 40px;
+  border: 1px solid #A4A4A4;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #000000;
+}
+.cart__products_button:hover, .cart__products_button:active, .cart__products_button:focus {
+  cursor: pointer;
+  outline: none;
+  opacity: 0.5;
+  background: #F1808F;
+  color: #FFFFFF;
+}
+
 /*# sourceMappingURL=style.css.map */
