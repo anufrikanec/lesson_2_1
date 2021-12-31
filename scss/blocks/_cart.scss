@@ -173,7 +173,7 @@
     font-size: 16px;
     line-height: 19px;
     color: #222222;
-    margin-bottom: 21px;
+    margin-bottom: 39px;
   }
 
   &__adress_total_grandtotal-rate {
@@ -186,6 +186,17 @@
     border: 0;
     padding: 15px 41px;
     text-transform: uppercase;
+    position: relative;
+  }
+
+  &__adress_total-button:before {
+    content: '';
+    width: 100%;
+    height: 1px;
+    background: #E2E2E2;
+    position: absolute;
+    top: -17px;
+    transform: translateX(-23%);
   }
 
   &__adress_total-button:hover,
