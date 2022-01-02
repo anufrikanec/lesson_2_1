@@ -1181,6 +1181,99 @@ body {
   padding: 5% 15%;
   background-color: white;
   margin-top: -4%;
+  border: 1px solid #EAEAEA;
+}
+.product__info-collection_tittle {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F1808F;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+}
+.product__info-product_tittle {
+  font-size: 18px;
+  line-height: 21px;
+  font-weight: 300;
+  font-style: normal;
+  color: #4D4D4D;
+  text-transform: uppercase;
+  margin-bottom: 48px;
+}
+.product__info-product_text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #5E5E5E;
+  text-align: center;
+  margin-bottom: 32px;
+}
+.product__info-product_rate {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #F1808F;
+  margin-bottom: 130px;
+}
+.product__info-product_menu {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 49px;
+}
+.product__info-product_menu-button {
+  background-color: white;
+  border: none;
+  color: #6F6E6E;
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+}
+.product__info-product_button {
+  display: flex;
+  background-color: white;
+  border: 1px solid #F1808F;
+  align-items: center;
+}
+.product__info-product_button_icon {
+  fill: #F1808F;
+  width: 26px;
+  height: 24px;
+  margin: 14px 24px;
+}
+.product__info-product_button_text {
+  font-size: 16px;
+  line-height: 19px;
+  font-weight: 400;
+  font-style: normal;
+  color: #F1808F;
+  margin-right: 57px;
+}
+.product__info-product_button:hover, .product__info-product_button:focus, .product__info-product_button:focus {
+  cursor: pointer;
+  outline: none;
+  background-color: #F1808F;
+}
+.product__info-product_button:hover .product__info-product_button_icon, .product__info-product_button:focus .product__info-product_button_icon, .product__info-product_button:active .product__info-product_button_icon {
+  fill: #FFFFFF;
+}
+.product__info-product_button:hover .product__info-product_button_text, .product__info-product_button:focus .product__info-product_button_text, .product__info-product_button:active .product__info-product_button_text {
+  color: #FFFFFF;
+}
+
+@media (max-width: 1599px) {
+  .product__other_item3 {
+    display: none;
+  }
+}
+@media (max-width: 767px) {
+  .product__other_item2 {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
