@@ -1,0 +1,59 @@
+.product {
+  &__title-wrap {
+    height: 148px;
+    background: #F8F3F4;
+    display: flex;
+    margin-bottom: 11px;
+  }
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__title-pink {
+    color: $pink-text;
+    text-transform: uppercase;
+    @include font(24px, 29px)
+  }
+
+  &__title_right {
+    color: #636363;
+    text-transform: uppercase;
+    @include font(14px, 17px, 300)
+  }
+
+  &__title_right-pink {
+    color: $pink-text;
+  }
+
+  &__carousel-banner_block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 744px;
+    background: #F7F7F7;
+  }
+
+  &__carousel-banner_img {
+    object-fit: contain;
+    margin: 30px;
+  }
+  &__carousel-control-next-icon,
+  &__carousel-control-prev-icon {
+    background-color: rgba(42, 42, 42, 0.15);
+    height: 47px;
+    width: 47px;
+  }
+
+  &__info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5% 15%;
+    background-color: white;
+    margin-top: -4%;
+  }
+}
