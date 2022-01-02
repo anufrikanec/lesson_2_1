@@ -6,6 +6,7 @@
         @include flex-center;
         flex-direction: column;
         flex-grow: 1;
+        transition: opacity 700ms;
     }
 
     &__item:hover,

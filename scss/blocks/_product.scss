@@ -70,6 +70,17 @@
     color: #4D4D4D;
     text-transform: uppercase;
     margin-bottom: 48px;
+    position: relative;
+  }
+
+  &__info-product_tittle:before {
+    content: '';
+    width: 30%;
+    height: 3px;
+    background: #EF5B70;
+    position: absolute;
+    top: -17px;
+    transform: translateX(120%);
   }
 
   &__info-product_text {
@@ -89,6 +100,17 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 49px;
+    position: relative;
+  }
+
+  &__info-product_menu:before {
+    content: '';
+    width: 200%;
+    height: 2px;
+    background: #EAEAEA;
+    position: absolute;
+    top: -65px;
+    transform: translateX(-25%);
   }
 
   &__info-product_menu-button {
