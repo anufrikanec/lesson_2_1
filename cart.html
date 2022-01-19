@@ -92,7 +92,7 @@
                     <img src="./img/cart_prod1.jpg" alt="Cart product img" class="cart__products_item_img">
                     <div class="cart__products_item_info">
                         <h2 class="cart__products_item_info_title">mango  people  t-shirt</h2>
-                        <p class="cart__products_item_info_price">Price: $300</p>
+                        <p class="cart__products_item_info_price">Price: <span class="cart__products_item_info_price-rate">$300</span></p>
                         <p class="cart__products_item_info_color">Color: Red</p>
                         <p class="cart__products_item_info_size">Size: Xl</p>
                         <p class="cart__products_item_info_quantity">Quantity:	2</p>
@@ -102,15 +102,15 @@
                     <img src="./img/cart_prod2.jpg" alt="Cart product img" class="cart__products_item_img">
                     <div class="cart__products_item_info">
                         <h2 class="cart__products_item_info_title">mango  people  t-shirt</h2>
-                        <p class="cart__products_item_info_price">Price: $300</p>
+                        <p class="cart__products_item_info_price">Price: <span class="cart__products_item_info_price-rate">$300</span></p>
                         <p class="cart__products_item_info_color">Color: Red</p>
                         <p class="cart__products_item_info_size">Size: Xl</p>
                         <p class="cart__products_item_info_quantity">Quantity:	2</p>
                     </div>
                 </div>
                 <div class="cart__products_buttons">
-                    <button class="cart__products_buttons_clear">clear shopping cart</button>
-                    <button class="cart__products_buttons_continue">continue shopping</button>
+                    <button class="cart__products_button">clear shopping cart</button>
+                    <button class="cart__products_button">continue shopping</button>
                 </div>
             </div>
             <div class="cart__adress">
@@ -118,16 +118,17 @@
                     <fieldset class="cart__form-fieldset">
                         <legend class="cart__form-legend">shipping adress</legend>
                         <label class="visually-hidden" for="Country">Country</label>
-                        <input class="cart_input" type="text" id="Country" placeholder="Country" required>
+                        <input class="cart__input" type="text" id="Country" placeholder="Country" required>
                         <label class="visually-hidden" for="State">State</label>
                         <input class="cart__input" type="text" id="State" placeholder="State">
                         <label class="visually-hidden" for="Postcode">Postcode</label>
                         <input class="cart__input" type="text" id="Postcode" placeholder="Postcode / Zip">
                     </fieldset>
+                    <button class="cart__adress_button">get a quote</button>
                 </form>
                 <div class="cart__adress_total">
-                    <p class="cart__adress_total_subtotal">SUB TOTAL         $900</p>
-                    <p class="cart__adress_total_grandtotal">GRAND TOTAL      $900</p>
+                    <p class="cart__adress_total_subtotal">SUB TOTAL $900</p>
+                    <p class="cart__adress_total_grandtotal">GRAND TOTAL <span class="cart__adress_total_grandtotal-rate">$900</span></p>
                     <button class="cart__adress_total-button">proceed to checkout</button>
                 </div>
             </div>
