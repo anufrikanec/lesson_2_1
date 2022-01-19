@@ -3,6 +3,7 @@
     
     &__logo {
         margin: 0 41px 0 0;
+        transition: opacity 700ms;
     }
 
     &__logo:hover,
@@ -54,6 +55,7 @@
 
     &__icon{
         fill: #E8E8E8;
+        transition: fill 700ms;
     }
 
     &__button:hover,
@@ -94,7 +96,8 @@
     }
 
     &__menu {
-        display: none;
+        transform: translateY(-1200px);
+        transition: transform 0.7s;
         position: absolute;
         width: 232px;
         height: 764px;
@@ -110,7 +113,9 @@
     &__button:hover +&__menu,
     &__button:active +&__menu,
     &__button:focus +&__menu {
+        transform: translateX(0);
         display: block;
+        z-index: 1;
     }
 
     &-menu:hover {
@@ -123,6 +128,14 @@
         line-height: 17px;
         text-transform: uppercase;
         padding-top: 37px;
+    }
+}
+
+@media (max-width: $tablet-width) {
+    .header {
+        &__menu {
+            right: 0px;
+        }
     }
 }
 

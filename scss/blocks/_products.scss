@@ -126,6 +126,8 @@
         padding: 14px 38px;
         color: $pink-text;
         margin-bottom: 95px;
+        transition-property: background, color;
+        transition-duration: .7s;
     }
 
     &__button:hover,

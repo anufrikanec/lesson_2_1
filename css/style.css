@@ -93,6 +93,7 @@ body {
 }
 .header__logo {
   margin: 0 41px 0 0;
+  transition: opacity 700ms;
 }
 .header__logo:hover, .header__logo:focus {
   opacity: 0.5;
@@ -129,6 +130,7 @@ body {
 }
 .header__icon {
   fill: #E8E8E8;
+  transition: fill 700ms;
 }
 .header__button:hover, .header__button:active, .header__button:focus {
   cursor: pointer;
@@ -154,7 +156,8 @@ body {
   align-items: center;
 }
 .header__menu {
-  display: none;
+  transform: translateY(-1200px);
+  transition: transform 0.7s;
   position: absolute;
   width: 232px;
   height: 764px;
@@ -167,7 +170,9 @@ body {
   box-shadow: -13px 13px 11px -7px rgba(34, 60, 80, 0.38);
 }
 .header__button:hover + .header__menu, .header__button:active + .header__menu, .header__button:focus + .header__menu {
+  transform: translateX(0);
   display: block;
+  z-index: 1;
 }
 .header-menu:hover {
   display: block;
@@ -180,6 +185,11 @@ body {
   padding-top: 37px;
 }
 
+@media (max-width: 1599px) {
+  .header__menu {
+    right: 0px;
+  }
+}
 @media (max-width: 767px) {
   .header__link {
     display: none;
@@ -312,6 +322,7 @@ body {
   align-items: center;
   flex-direction: column;
   flex-grow: 1;
+  transition: opacity 700ms;
 }
 .sales__item:hover, .sales__item:active, .sales__item:focus {
   cursor: pointer;
@@ -503,6 +514,8 @@ body {
   padding: 14px 38px;
   color: #F1808F;
   margin-bottom: 95px;
+  transition-property: background, color;
+  transition-duration: 0.7s;
 }
 .products__button:hover, .products__button:active, .products__button:focus {
   cursor: pointer;
@@ -1200,6 +1213,16 @@ body {
   color: #4D4D4D;
   text-transform: uppercase;
   margin-bottom: 48px;
+  position: relative;
+}
+.product__info-product_tittle:before {
+  content: "";
+  width: 30%;
+  height: 3px;
+  background: #EF5B70;
+  position: absolute;
+  top: -17px;
+  transform: translateX(120%);
 }
 .product__info-product_text {
   font-size: 14px;
@@ -1222,6 +1245,16 @@ body {
   display: flex;
   justify-content: space-between;
   margin-bottom: 49px;
+  position: relative;
+}
+.product__info-product_menu:before {
+  content: "";
+  width: 200%;
+  height: 2px;
+  background: #EAEAEA;
+  position: absolute;
+  top: -65px;
+  transform: translateX(-25%);
 }
 .product__info-product_menu-button {
   background-color: white;
